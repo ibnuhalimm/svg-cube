@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafika Komputer - Tugas 02</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #frame {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 40px;
+            border: 1px dashed #ccc;
+        }
+        #title {
+            text-align: center;
+        }
+        #content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="frame">
+        <h2 id="title">Kubus SVG</h2>
+
+        <div id="content">
+            <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <!-- vertikal belakang -->
+                <line x1="140" y1="30" x2="140" y2="150" stroke="yellow" stroke-width="3" />
+                <line x1="290" y1="30" x2="290" y2="150" stroke="yellow" stroke-width="3" />
+
+                <!-- horizontal belakang -->
+                <line x1="140" y1="30" x2="290" y2="30" stroke="purple" stroke-width="3" />
+                <line x1="140" y1="150" x2="290" y2="150" stroke="purple" stroke-width="3" />
+
+                <!-- vertikal depan -->
+                <line x1="90" y1="80" x2="90" y2="200" stroke="blue" stroke-width="3" />
+                <line x1="240" y1="80" x2="240" y2="200" stroke="blue" stroke-width="3" />
+
+                <!-- horizontal depan -->
+                <line x1="90" y1="80" x2="240" y2="80" stroke="red" stroke-width="3" />
+                <line x1="90" y1="200" x2="240" y2="200" stroke="red" stroke-width="3" />
+
+                <!-- penghubung atas -->
+                <line x1="90" y1="80" x2="140" y2="30" stroke="green" stroke-width="3" />
+                <line x1="240" y1="80" x2="290" y2="30" stroke="green" stroke-width="3" />
+
+                <!-- penghubung bawah -->
+                <line x1="90" y1="200" x2="140" y2="150" stroke="green" stroke-width="3" />
+                <line x1="240" y1="200" x2="290" y2="150" stroke="green" stroke-width="3" />
+
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
